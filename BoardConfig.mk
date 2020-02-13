@@ -195,8 +195,11 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-11-01
+VENDOR_SECURITY_PATCH := 2019-11-01
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
