@@ -32,7 +32,7 @@ $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-carbon
+    $(DEVICE_PATH)/overlay-du
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
