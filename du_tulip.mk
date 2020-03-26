@@ -34,6 +34,6 @@ PRODUCT_MODEL := Redmi Note 6 Pro
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V10.3.2.0.PEKMIXM release-keys"
-
-BUILD_FINGERPRINT := xiaomi/tulip/tulip:9/PKQ1.180904.001/V10.3.2.0.PEKMIXM:user/release-keys
+    PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V11.0.3.0.PEKMIXM release-keys"
+    
+BUILD_FINGERPRINT := xiaomi/tulip/tulip:9/PKQ1.180904.001/V11.0.3.0.PEKMIXM:user/release-keys
