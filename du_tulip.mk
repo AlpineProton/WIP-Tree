@@ -39,4 +39,4 @@ DU_BUILD_TYPE := OFFICIAL
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V11.0.3.0.PEKMIXM release-keys"
     
-BUILD_FINGERPRINT := xiaomi/tulip/tulip:9/PKQ1.180904.001/V11.0.3.0.PEKMIXM:user/release-keys
+BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ2A.200305.002/6138846:user/release-keys"
