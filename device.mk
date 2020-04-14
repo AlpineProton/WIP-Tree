@@ -38,6 +38,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+#GCam Go
+PRODUCT_PACKAGES += \
+    GCam
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
