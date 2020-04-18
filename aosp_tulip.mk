@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common du stuff
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+# Inherit some common EvoX stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from tulip device
 $(call inherit-product, device/xiaomi/tulip/device.mk)
@@ -28,15 +28,19 @@ $(call inherit-product, device/xiaomi/tulip/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := du_tulip
+PRODUCT_NAME := aosp_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Official
-DU_BUILD_TYPE := OFFICIAL
+# Inherit some common Evolution X stuff.
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="tulip-user 9 PKQ1.180904.001 V11.0.3.0.PEKMIXM release-keys"
-    
-BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys"
+
+BUILD_FINGERPRINT := google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys

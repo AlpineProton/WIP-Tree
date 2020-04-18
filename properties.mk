@@ -110,7 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera Aux
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.motorola.faceunlock
+    vendor.camera.aux.packagelist=com.android.camera,com.motorola.faceunlock,com.google.android.apps.cameralite
 
 # Codec2 switch
 PRODUCT_PROPERTY_OVERRIDES += \

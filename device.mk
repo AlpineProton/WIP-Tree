@@ -31,12 +31,9 @@ $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-du
+    $(DEVICE_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(DEVICE_PATH)/overlay/packages/apps/Snap
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -160,9 +157,6 @@ PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
