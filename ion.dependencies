@@ -1,0 +1,12 @@
+[[
+  {
+    "repository": "android_kernel_xiaomi_tulip",
+    "target_path": "kernel/xiaomi/tulip",
+    "branch": "android-10"
+  },
+  {
+    "repository": "vendor_xiaomi_tulip ",
+    "target_path": "vendor/xiaomi/tulip",
+    "branch": "ten"
+  }
+]
