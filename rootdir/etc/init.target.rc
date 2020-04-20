@@ -108,11 +108,6 @@ on boot
     chown system system /sys/touchpanel/capacitive_keys
     chown system system /sys/touchpanel/double_tap
     chown system system /sys/touchpanel/reversed_keys
-	
-	 # FPS Info
-    chown system graphics /sys/class/graphics/fb0/measured_fps
-    chmod 0666 /sys/class/graphics/fb0/measured_fps
-
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
