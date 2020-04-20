@@ -226,3 +226,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 -include vendor/xiaomi/tulip/BoardConfigVendor.mk
+
+export SKIP_ABI_CHECKS=true
+export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
